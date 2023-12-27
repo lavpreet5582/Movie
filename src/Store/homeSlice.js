@@ -8,7 +8,7 @@ export const homeSlice = createSlice({
   },
   reducers: {
     getGenres: (state, action) => {
-      state.movies = action.payload;
+      state.genres = action.payload;
     },
 
     getApiConfiguration: (state, action) => {

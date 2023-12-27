@@ -27,7 +27,28 @@ function App() {
   };
   useEffect(() => {
     fetchApiConfiguration();
+    fetchGenres();
   }, []);
+
+
+  const fetchGenres = async () => {
+    let promises = [];
+    let endPoints = ["movie", "tv"];
+    let allGenres = {};
+
+    endPoints.forEach((url) => {
+      promises.push(fetchFromApi(`/genre/${url}/list`));
+    });
+
+    const data = await Promise.all(promises);
+
+    data.map(({ genres }) => {
+      return genres.map(({ name, id }) => (allGenres[id] = name));
+    });
+
+    dispatch(getGenres(allGenres));
+  };
+
   return (
     <BrowserRouter>
       <Header />
