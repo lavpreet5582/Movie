@@ -31,6 +31,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     }
+    // eslint-disable-next-line
   }, [lastScrollY]);
 
 
@@ -58,7 +59,7 @@ const Header = () => {
 
   const searchQueryHandler = (event) => {
     if (event.key === "Enter" && query.length > 0) {
-      navigate(`/search?q=${query}`);
+      navigate(`/search/${query}`);
       setTimeout(() => {
         setQuery("");
         setShowSearch(false);
@@ -78,7 +79,7 @@ const Header = () => {
   return (
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <ContentWrapper>
-        <div className="logo">
+        <div className="logo" onClick={() => navigate("/")}>
           <img src={logo} alt="" />
         </div>
         <ul className="menuItems">
@@ -113,7 +114,7 @@ const Header = () => {
                 type="text"
                 placeholder="Search for a movie or tv show...."
                 onChange={(e) => setQuery(e.target.value)}
-                onKeyUp={() => navigate(`/search?q=${query}`)}
+                onKeyUp={searchQueryHandler}
               />
               <VscChromeClose
                 onClick={() => setShowSearch(false)}

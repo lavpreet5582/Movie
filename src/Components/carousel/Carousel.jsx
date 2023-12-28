@@ -19,7 +19,6 @@ const Carousel = ({ data, loading, endpoint, title }) => {
   const { url } = useSelector((state) => state.home);
   const navigate = useNavigate();
 
-  const onNavigation = (dir) => {};
   const navigation = (dir) => {
     const container = carouselContainer.current;
     const scrollAmount = dir === "left" ? container.scrollLeft - (container.offsetWidth + 20) : container.scrollLeft + (container.offsetWidth + 20);
