@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./HeroBanner.scss";
 import useFetch from "../../../hooks/useFetch";
 import { useSelector } from "react-redux";
-import Img from "../../../Components/LazyLoadImage/Img";
+// import Img from "../../../Components/LazyLoadImage/Img";
 import ContentWrapper from "../../../Components/contentWrapper/ContentWrapper";
 
 const HeroBanner = () => {
@@ -14,13 +14,11 @@ const HeroBanner = () => {
   const { data, loading } = useFetch("/movie/upcoming");
 
   useEffect(() => {
-    // const bg = apiConfig.originalImage(
-    //   data?.results[Math.floor(Math.random() * 20)]?.backdrop_path
-    // );
     const bg =
       url.backdrop +
       data?.results[Math.floor(Math.random() * 20)]?.backdrop_path;
     setBackground(bg);
+    // eslint-disable-next-line
   }, [data]);
   const searchQueryHandler = (event) => {
     event.preventDefault();
@@ -39,8 +37,10 @@ const HeroBanner = () => {
       <div className="opacity-layer"></div>
       <ContentWrapper>
         <div className="heroBannerContent">
-          <span className="title">Spiderman</span>
-          <span className="subTitle">Experience the rise of Miles Morales</span>
+          <span className="title">Welcome</span>
+          <span className="subTitle">
+            Millions of movies, TV shows and people to discover. Explore now.
+          </span>
           <div className="searchInput">
             <input
               type="text"
