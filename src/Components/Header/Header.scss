@@ -29,9 +29,20 @@
     }
     .logo {
         cursor: pointer;
-        img {
-            height: 50px;
+        display: flex;
+        align-items: center;
+        color: var(--orange);
+        font-weight: bold;
+        font-size: xx-large;
+
+        svg {
+            font-size: 50px;
         }
+
+        .logoName {
+            margin-left: 10px;
+        }
+        
     }
     .menuItems {
         list-style-type: none;

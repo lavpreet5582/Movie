@@ -3,11 +3,12 @@ import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
 import { useNavigate, useLocation } from "react-router-dom";
+import { MdMovieFilter  } from "react-icons/md";
 
 import "./Header.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/movix-logo.svg";
+// import logo from "../../assets/movix-logo.svg";
 
 const Header = () => {
   const [show, setShow] = useState("top");
@@ -80,7 +81,10 @@ const Header = () => {
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <ContentWrapper>
         <div className="logo" onClick={() => navigate("/")}>
-          <img src={logo} alt="" />
+          <div className="logoimg">
+            <MdMovieFilter  />
+          </div>
+          <span className="logoName">MovieWiki</span>
         </div>
         <ul className="menuItems">
           <li className="menuItem" onClick={() => navigate("/")}>

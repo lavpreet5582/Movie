@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect } from "react";
 import { fetchFromApi } from "./utils/api";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getApiConfiguration, getGenres } from "./Store/homeSlice";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/home/Home";
@@ -14,7 +14,7 @@ import Error from "./Pages/error/Error";
 
 function App() {
   const dispatch = useDispatch();
-  const { url, genres } = useSelector((state) => state.home);
+  // const { url, genres } = useSelector((state) => state.home);
   const fetchApiConfiguration = () => {
     fetchFromApi("/configuration").then((data) => {
       const url = {
@@ -28,6 +28,7 @@ function App() {
   useEffect(() => {
     fetchApiConfiguration();
     fetchGenres();
+    // eslint-disable-next-line
   }, []);
 
 
