@@ -2,7 +2,7 @@
 # <img  align="center" width= 70px  src="https://raw.githubusercontent.com/aniruddha-gade/Movix-app/main/src/assets/movix-logo.png">  MovieWiki App
 
 
-Discover real-time movies and TV shows with detailed information using The Movix App. <br/>
+Discover real-time movies and TV shows with detailed information using The MovieWiki App. <br/>
 This app is built with React.js and styled using Tailwind CSS, providing an engaging and responsive user experience.  <br/>
 This app offers a responsive and visually appealing user interface that adapts seamlessly to various screen sizes.
 
