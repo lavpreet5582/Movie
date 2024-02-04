@@ -1,70 +1,116 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# <img  align="center" width= 70px  src="https://raw.githubusercontent.com/aniruddha-gade/Movix-app/main/src/assets/movix-logo.png">  Movix App
 
-## Available Scripts
 
-In the project directory, you can run:
+Discover real-time movies and TV shows with detailed information using The Movix App. <br/>
+This app is built with React.js and styled using Tailwind CSS, providing an engaging and responsive user experience.  <br/>
+This app offers a responsive and visually appealing user interface that adapts seamlessly to various screen sizes.
 
-### `npm start`
+<h2>Live link 🌍📡 - [  https://movix-web.netlify.app/  ]</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img  align="center" width= 100%  src="https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/gif.gif">  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack 🛠️
 
-### `npm test`
+- ✨ React.js
+- 🎨 Tailwind CSS
+- 🔄 Redux
+- 🎥 The Movie Database (TMDB) API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features 🌟
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🏠 **Single page application**: Seamless navigation between different pages without the need for page refreshes..
+  
+- 🏠 **Random Home Page Background**: Background changes on page refresh or revisit, giving a fresh look every time.
+  
+- 🎬 **Carousel**: Explore trending, upcoming, and top-related movies and TV shows using interactive carousels.
+  
+- 📄 **Multiple Pages**: Navigate through different pages including Home, Details, Search Results, and Page Not Found.
+  
+- ♾️ **Infinite Scroll**: Incorporates the InfiniteScroll library for seamless scrolling through content.
+  
+- 🔍 **Search**: Implement the efficient and user-friendly search functionality.
+  
+- 🚀 **Lazy Loading**: Enhance performance by lazily loading images using the react-lazy-load-image library.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+  
+## Pages 📑
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Home**🏠: Refreshing backgrounds, interactive carousels, and a captivating UI.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Details**🎥: In-depth information, ratings, and trailers for each movie and TV show.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Search Results**🔍: Efficiently browse through search results with react-select.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Page Not Found**🚫: A friendly page for unexpected routes.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## React Hooks 🎣
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Utilized several React hooks for efficient state management and dynamic behavior:
 
-### Code Splitting
+- `useState`
+- `useEffect`
+- `useDispatch`
+- `useParams`
+- `useSelector`
+- `useLocation`
+- `useNavigate`
+- `useRef`
+- `Custom-Hook`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+📚 **React Library**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- 📅 **dayjs**: Utilizes the Dayjs library to beautifully format dates.
 
-### Making a Progressive Web App
+- 🚀 **Lazy Loading**: Enhance performance by lazily loading images using the react-lazy-load-image library.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- ♾️ **Infinite Scroll**: Incorporates the InfiniteScroll library for seamless scrolling through content.
 
-### Advanced Configuration
+- 🔍 **Select**: Enhance your user interface with interactive and customizable select option using the React Select library.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+##  🖥️ Screen Preview: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# 🏠 Random Home Page Background 
+ ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/home1.png) 
+  ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/home2.png)
+  ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/home3.png)
+  
+# Search Button
+  ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/home4.png)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Loading Skeleton
+  ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img11.png)
+  ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img1.png)
+  ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img2.png)
+
+
+  # Details of Movie / TV
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img3.png)
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img4.png)
+
+# Cast of the Movie / TV
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img5.png)
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/cast1.png)
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/cast2.png)
+
+# Official Videos & Recommendations
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img6.png)
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img7.png)
+
+
+  # Explore Page for Movies && TV Shows
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img8.png)
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img9.png)
+
+# Filters for Generes && Sorting
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/img10.png)
+  
+# Footer
+![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Movix-App/main/screenshots/footer.png)
